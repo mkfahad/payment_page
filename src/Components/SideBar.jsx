@@ -4,7 +4,7 @@ const SideBar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
     const Menus = [
-        { title: "My Account", },
+        { title: "My Account" },
         { title: "My Orders" },
         { title: "My Claims" },
         { title: "My Favorites" },

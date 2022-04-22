@@ -7,6 +7,8 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import PaymentCard from './PaymentCardVisa';
 import PaymentCardMaster from './PaymentCardMaster';
+import { CheckCircleIcon, CheckIcon } from '@heroicons/react/outline';
+import checkicon from '../assets/check_circle.svg'
 function PaymentDetails() {
     const [open, setOpen] = React.useState(false);
 
@@ -33,8 +35,7 @@ function PaymentDetails() {
                         <div className='h-[1px] w-full bg-gray-200' />
                         <DialogContent >
                             <DialogContentText>
-                                {/* To subscribe to this website, please enter your email address here. We
-                                will send updates occasionally. */}
+            
                             </DialogContentText>
                             <form class="w-full max-w-lg">
                                 <div class="flex flex-wrap -mx-3 mb-6">
@@ -82,6 +83,9 @@ function PaymentDetails() {
                                             Last Name
                                         </label>
                                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
+                                    </div>
+                                    <div>
+                                    <span className='flex'><img src={checkicon} /> <p size="small" className='text-gray-400'>Make this my default credit card</p></span>
                                     </div>
                                 </div>
                             </form>
